@@ -1,0 +1,10 @@
+{
+    "timeZone": "YOUR_TIMEZINE",
+    "dependencies": {
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "runtimeVersion": "V8",
+    "oauthScopes": [
+      "YOUR_OAUTH_SCOPES"
+    ]
+}
