@@ -4,7 +4,7 @@
 
 Fungsi-fungsi ini digunakan untuk membuat dropdown, mengisi cell kosong dengan data yang diinginkan, melakukan perekapan, generate PDF dan mengirimkan data dari Google Sheets ke Cloud Function setiap kali sheet yang ditentukan diedit. Data yang dikirimkan mencakup seluruh isi sheet (termasuk header) dan informasi terkait seperti nama sheet, timestamp, dan URL spreadsheet untuk disimpan dalam Database BigQuery.
 
-## Fungsi Utama
+## Fungsi Utama pada Create PDF dan Google Sheets Cloud Function Integration
 
 - **telahDiedit(e)**: Fungsi utama yang dipicu setiap kali ada perubahan pada sheet. Fungsi ini akan memeriksa apakah sheet yang sedang aktif ada dalam daftar sheet yang dipantau dan mengirimkan data ke Cloud Function yang sesuai jika kondisi terpenuhi dan setelahnya akan dimasukkan ke Database BigQuery.
   
@@ -51,7 +51,7 @@ Fungsi-fungsi ini digunakan untuk membuat dropdown, mengisi cell kosong dengan d
   **Cara Kerja**:  
   Setelah PDF dihasilkan, fungsi ini akan merekap data yang telah diisi pada sheet dan menyalinnya ke worksheet lain (biasanya worksheet ringkasan atau laporan). Fungsi ini digunakan untuk mencatat dan menyimpan hasil pengolahan data ke tempat yang tepat.
 
-## Cara Kerja Umum
+## Cara Kerja Umum Google Sheets Cloud Function Integration
 
 1. **Pemantauan Sheet**: Daftar sheet yang dipantau dan URL Cloud Function yang sesuai disimpan dalam objek `sheetConfigs`.
 2. **Validasi Sheet dan Sel**: 
